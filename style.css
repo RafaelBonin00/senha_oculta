@@ -1,0 +1,129 @@
+/* Remover as setas do input de número */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.div_input {
+    margin: 1%;
+}
+
+.input-field {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+/* Estilo para campos desabilitados */
+input:disabled {
+    background-color: #e0e0e0 ; /* Cor de fundo cinza para campos desabilitados */
+    border: 2px solid #b0b0b0 ;  /* Cor da borda cinza */
+    color: #b0b0b0 ; /* Cor do texto também cinza */
+    cursor: not-allowed; /* Indica que o campo não pode ser interagido */
+}
+
+/* Botão */
+button {
+    padding: 10px 20px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#attempts-left {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilo para a cor verde (corretamente acertado na posição) */
+.green {
+    background-color: #4CAF50 !important;  /* Verde mais forte */
+    color: white !important;  /* Cor do texto branca */
+    border-color: #388E3C !important;  /* Borda mais escura quando correto */
+}
+
+/* Estilo para a cor amarela (número na senha, mas na posição errada) */
+.yellow {
+    background-color: #FFEB3B !important; /* Amarelo claro */
+    color: black !important;  /* Cor do texto preta */
+    border-color: #FBC02D !important; /* Borda amarela mais forte */
+}
+
+/* Estilo para quando o jogador perde */
+.red {
+    background-color: #f44336; /* Vermelho */
+    color: white;  /* Cor do texto branca */
+}
+
+
+#jogar-novamente-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#jogar-novamente-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra a Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h2>Senha Oculta</h2>
+        <p>Descubra a Senha Numérica</p>
+        
+        <!-- Rodadas de tentativas -->
+        <form id="guess-form">
+            <!-- Tentativas -->
+            <div class="div_input" id="attempt1">
+                <input type="number" id="input1_1" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input2_1" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input3_1" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input4_1" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input5_1" class="input-field" maxlength="1" required disabled>
+            </div>
+            <div class="div_input" id="attempt2">
+                <input type="number" id="input1_2" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input2_2" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input3_2" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input4_2" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input5_2" class="input-field" maxlength="1" required disabled>
+            </div>
+            <div class="div_input" id="attempt3">
+                <input type="number" id="input1_3" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input2_3" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input3_3" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input4_3" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input5_3" class="input-field" maxlength="1" required disabled>
+            </div>
+            <div class="div_input" id="attempt4">
+                <input type="number" id="input1_4" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input2_4" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input3_4" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input4_4" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input5_4" class="input-field" maxlength="1" required disabled>
+            </div>
+            <div class="div_input" id="attempt5">
+                <input type="number" id="input1_5" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input2_5" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input3_5" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input4_5" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input5_5" class="input-field" maxlength="1" required disabled>
+            </div>
+            <div class="div_input" id="attempt6">
+                <input type="number" id="input1_6" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input2_6" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input3_6" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input4_6" class="input-field" maxlength="1" required disabled>
+                <input type="number" id="input5_6" class="input-field" maxlength="1" required disabled>
+            </div>
+        </form>
+        
+        <button type="button" id="submit-button">Enviar</button>
+
+        <div id="attempts-left">Tentativas restantes: 6</div>
+        <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
