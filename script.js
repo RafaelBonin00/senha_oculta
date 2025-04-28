@@ -18,7 +18,6 @@ let tentativas = 6; // Número de tentativas
 let tentativaAtual = 1; // A primeira tentativa
 const quantidade_index = 4; // Esse conta o "0" então para 4 são 5 "inputs"
 const feedbackDiv = document.getElementById('feedback');
-const attemptsLeftDiv = document.getElementById('attempts-left');
 const submitButton = document.getElementById('submit-button');
 
 function moveToNextField(currentField, attemptNumber, index) {
@@ -77,8 +76,6 @@ function processarTentativa() {
             mostrarBotaoReiniciar();  // Exibe o botão "Jogar novamente"
             return;
         } else {
-            feedbackDiv.innerHTML = `Tentativa ${tentativaAtual} incorreta.`;
-            feedbackDiv.className = "yellow"; 
 
             // Comparação da tentativa com a senha
             const inputs = document.querySelectorAll(`#attempt${tentativaAtual} input`);
@@ -101,7 +98,6 @@ function processarTentativa() {
 
         // Decrementa o número de tentativas restantes
         tentativas--;
-        attemptsLeftDiv.textContent = `Tentativas restantes: ${tentativas}`;
 
         // Vai para a próxima tentativa
         tentativaAtual++;
